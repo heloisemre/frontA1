@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inscription.css" />
+    <title>Harry Potter</title>
+  </head>
+  <body>
+
+    <header>
+        <button class="tablinks" onclick="LoginFormOn()">Connexion</button>
+        <h1 class="HP">Harry Potter Official Site</h1>
+        <button class="tablinks" onclick="SignUpFormOn()">Inscription</button>
+
+    
+    </header>
+
+    <content>
+      <div class="BoxLogin hide" id="loginForm">
+        <h2>Connexion</h2>
+        <form methode="">
+          <div class="Inscription-input">
+            <label for="loginEmail">Email :</label>
+            <input type="email" id="loginEmail" required />
+          </div>
+          <div class="Inscription-input">
+            <label for="loginPassword">Mot de passe :</label>
+            <input type="password" id="loginPassword" required />
+          </div>
+          <div>
+            <button onclick="login()">Se connecter</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="message-error">Formulaire non envoyé !</div>
+      <div class="message-success">Formulaire envoyé avec succès !</div>
+
+      <div class="BoxInscription" id="signupForm" >
+        <h2>Inscription</h2>
+
+        
+
+        <form methode="">
+          <div class="Inscription-input">
+            <label for="email">Email :</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="Inscription-input">
+            <label for="username">Pseudo :</label>
+            <input type="text" id="username" required />
+          </div>
+          <div class="Inscription-input">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" required />
+          </div>
+          <div class="Inscription-input">
+            <label for="confirmPassword">Confirmer le mot de passe :</label>
+            <input type="password" id="confirmPassword" required />
+          </div>
+          <div></div>
+        </form>
+
+        <button onclick="register()" class="Inscription-btn">S'inscrire</button>
+      </div> 
+    </content>
+
+
+    
+
+    <script src="inscription.js"></script>
+  </body>
+</html>
